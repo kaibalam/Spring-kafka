@@ -1,0 +1,3 @@
+FROM openjdk:17-jdk-alpine
+COPY target/SpringBooProvider.jar producer.jar
+ENTRYPOINT ["java", "-jar", "producer.jar"]

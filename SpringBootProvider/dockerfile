@@ -1,0 +1,3 @@
+FROM openjdk:17-jdk-alpine
+COPY target/SpringBooConsumer.jar consumer.jar
+ENTRYPOINT ["java", "-jar", "consumer.jar"]
